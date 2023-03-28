@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: test01
+  name: test01
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test01
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: test01
+    spec:
+      containers:
+      - image: quay.io/openshift-release-dev/ocp-v4.0-art-dev
+        name: ocp-v4-0-art-dev-kg4fk
+        command:
+          - "/bin/bash"
+          - "-c"
+          - "sleep 99999"
+        resources: {}
+status: {}
