@@ -1,0 +1,14 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  annotations:
+    rbac.authorization.kubernetes.io/autoupdate: "true"
+  creationTimestamp: "2023-03-10T09:00:26Z"
+  name: self-provisioners
+  resourceVersion: "11336"
+  uid: b4469df4-e3ce-4cbc-bde1-a6bc79ea2194
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: self-provisioner
+subjects: []
