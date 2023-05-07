@@ -23,6 +23,6 @@ spec:
         command:
           - "/bin/bash"
           - "-c"
-          - "sleep 99999"
+          - "sleep 999991"
         resources: {}
 status: {}
