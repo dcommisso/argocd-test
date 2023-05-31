@@ -23,6 +23,6 @@ spec:
         command:
           - "/bin/bash"
           - "-c"
-          - "sleep 999991"
+          - "echo 'I am a log'; sleep 999991"
         resources: {}
 status: {}
